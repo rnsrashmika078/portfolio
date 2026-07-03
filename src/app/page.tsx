@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-[var(--bg)] text-[var(--ink)]">
@@ -9,25 +11,32 @@ export default function Home() {
             <div className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--muted)]">
               Portfolio
             </div>
-            <a
-              className="text-sm font-medium text-[var(--ink)] underline decoration-[var(--accent)]/60 underline-offset-4 transition hover:text-[var(--accent-strong)]"
-              href="mailto:rnsrashmika078@gmail.com"
-            >
-              rnsrashmika078@gmail.com
-            </a>
+            <div className="flex items-center gap-4">
+              <a
+                className="text-sm font-medium text-[var(--ink)] underline decoration-[var(--accent)]/60 underline-offset-4 transition hover:text-[var(--accent-strong)]"
+                href="mailto:rnsrashmika078@gmail.com"
+              >
+                rnsrashmika078@gmail.com
+              </a>
+              <a
+                className="text-sm font-medium text-[var(--muted)] underline underline-offset-4 transition hover:text-[var(--accent-strong)]"
+                href="https://www.linkedin.com/in/rashmika-siriwardhana-b155b7258/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn
+              </a>
+            </div>
           </header>
 
           <section className="grid items-center gap-10 lg:grid-cols-[1.2fr_0.8fr]">
             <div className="flex flex-col gap-6">
               <div className="flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--muted)]">
                 <span className="rounded-full border border-[var(--ink)]/10 bg-white/80 px-3 py-1">
-                  UE5 C++
+                  UE5 C++/Blueprint
                 </span>
                 <span className="rounded-full border border-[var(--ink)]/10 bg-white/80 px-3 py-1">
-                  Next.js + React
-                </span>
-                <span className="rounded-full border border-[var(--ink)]/10 bg-white/80 px-3 py-1">
-                  Full Stack
+                  Full Stack Engineer
                 </span>
               </div>
               <h1 className="text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
@@ -35,43 +44,38 @@ export default function Home() {
               </h1>
               <p className="max-w-xl text-lg leading-relaxed text-[var(--muted)] sm:text-xl">
                 Game developer in Unreal Engine 5 and full-stack engineer
-                building ambitious experiences across web, desktop, and mobile.
               </p>
-              <div className="flex flex-wrap items-center gap-4">
-                <a
-                  className="inline-flex items-center justify-center rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[var(--accent-strong)]"
-                  href="mailto:rnsrashmika078@gmail.com"
-                >
-                  Contact me
-                </a>
-                <a
-                  className="inline-flex items-center justify-center rounded-full border border-[var(--ink)]/20 px-6 py-3 text-sm font-semibold text-[var(--ink)] transition hover:border-[var(--accent)] hover:text-[var(--accent-strong)]"
-                  href="#skills"
-                >
-                  View skills
-                </a>
-              </div>
+              <p className="max-w-xl text-lg leading-relaxed text-[var(--muted)] sm:text-xl">
+                Undergraduate student at the University of South Eastern
+                University, Sri Lanka. ( Bachelor, Software Engineering )
+              </p>
+              <div className="flex flex-wrap items-center gap-4"></div>
             </div>
             <div className="rounded-3xl border border-[var(--ink)]/10 bg-[var(--card)] p-6 shadow-[0_20px_60px_rgba(26,26,26,0.08)]">
               <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-[0.2em] text-[var(--muted)]">
-                Focus
+                About My Experience in Unreal Engine
                 <span className="rounded-full bg-[var(--accent)]/10 px-3 py-1 text-[var(--accent-strong)]">
-                  2026
+                  Experience
                 </span>
               </div>
               <div className="mt-6 space-y-5 text-sm text-[var(--muted)]">
                 <div className="flex items-start gap-3">
                   <span className="mt-1 h-2 w-2 rounded-full bg-[var(--accent)]" />
-                  Building immersive game systems with UE5 and C++.
+                  More than 5 year of experience in Unreal engine
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="mt-1 h-2 w-2 rounded-full bg-[var(--accent-2)]" />
-                  Crafting clean, fast web apps in Next.js and React.
+                  Start with UE version 4.23
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="mt-1 h-2 w-2 rounded-full bg-[var(--ink)]" />
-                  Shipping backend APIs across Laravel, Express, FastAPI, and
-                  ASP.NET.
+                  <span className="mt-1 h-2 w-2 rounded-full bg-[var(--accent-2)]" />
+                  Experience on UE 5 newer features PCG, Motion Matching, motion
+                  warp
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <span className="mt-1 h-2 w-2 rounded-full bg-[var(--accent-2)]" />
+                  Familiar with Terrain Design , Environment Design
                 </div>
               </div>
             </div>
@@ -89,20 +93,42 @@ export default function Home() {
             <div className="grid gap-6 md:grid-cols-2">
               {[
                 {
-                  title: "Game Development",
-                  items: ["Unreal Engine 5", "C++ gameplay systems", "Tools"],
+                  title: "FPS Projects",
+                  items: [
+                    "Unreal Engine 5",
+                    "C++ gameplay systems",
+                    "blueprints",
+                    "Hit reactions",
+                    "Ragdoll physics",
+                  ],
                 },
                 {
-                  title: "Web Development",
-                  items: ["Next.js", "React", "TypeScript"],
+                  title: "AI NPC Systems",
+                  items: [
+                    "Behavior Trees",
+                    "Blackboard",
+                    "Perception",
+                    "AIController",
+                  ],
                 },
                 {
-                  title: "Backend",
-                  items: ["Laravel", "Express.js", "FastAPI", "ASP.NET"],
+                  title: "Ledge Grab System",
+                  items: ["Motion warp"],
                 },
                 {
-                  title: "Desktop + Mobile",
-                  items: ["Electron.js", "Flutter", "App release"],
+                  title: "Vehicle Destruction Systems",
+                  items: [
+                    "Vehicle Physics",
+                    "Vehicle Deformation",
+                    "Weight paint on meshes",
+                  ],
+                },
+                {
+                  title: "Animation with Metahuman Characters",
+                  items: [
+                    "use case in Anim montage",
+                    "use of blender for animation",
+                  ],
                 },
               ].map((group) => (
                 <div
@@ -127,34 +153,50 @@ export default function Home() {
               ))}
             </div>
           </section>
-
-          <section className="grid gap-6 rounded-3xl border border-[var(--ink)]/10 bg-white/90 p-8 lg:grid-cols-[1.3fr_0.7fr]">
-            <div className="space-y-4">
+          <section id="skills" className="w-full">
+            <div className="flex flex-wrap items-center justify-between">
               <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-                Building with intent
+                SOME OF MY WORK
               </h2>
-              <p className="text-base leading-relaxed text-[var(--muted)]">
-                I care about responsiveness, clarity, and polished details. From
-                expressive game mechanics to elegant user interfaces, I enjoy
-                projects that feel alive.
+              <p className="text-sm text-[var(--muted)]">
+                (LinkedIn posts with video demos)
               </p>
-            </div>
-            <div className="rounded-2xl border border-[var(--ink)]/10 bg-[var(--card)] p-6 text-sm text-[var(--muted)]">
-              <div className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--muted)]">
-                Availability
-              </div>
-              <p className="mt-4 text-base text-[var(--ink)]">
-                Open to freelance and collaborative work.
-              </p>
-              <a
-                className="mt-6 inline-flex items-center text-sm font-semibold text-[var(--accent-strong)] underline decoration-[var(--accent)]/60 underline-offset-4"
-                href="mailto:rnsrashmika078@gmail.com"
-              >
-                Book a chat
-              </a>
+              <section className="flex w-full mt-5  flex-col gap-5 justify-between rounded-3xl border border-[var(--ink)]/10 bg-white/90 p-8 lg:grid-cols-[1.3fr_0.7fr]">
+                <div className="w-full flex justify-between gap-5">
+                  <h1>AI NPC Hide-and-Seek System</h1>
+                  <a
+                    href="https://www.linkedin.com/posts/rashmika-siriwardhana-b155b7258_unrealengine5-ue5-gamedev-ugcPost-7270798475661852672-beLG/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9y7IEBMSz-VK8Wwm05LkKHCv_uUrNXxGY"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View on LinkedIn
+                  </a>
+                </div>
+                <div className="w-full flex justify-between">
+                  <h1>Vehicle Steering Animation with MetaHuman Characters</h1>
+                  <a
+                    href="https://www.linkedin.com/posts/rashmika-siriwardhana-b155b7258_unrealengine5-gamedevelopment-ue5-ugcPost-7271737992694657024-cgVK/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9y7IEBMSz-VK8Wwm05LkKHCv_uUrNXxGY"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View on LinkedIn
+                  </a>
+                </div>
+                <div className="w-full flex justify-between">
+                  <h1>
+                    Physics Material-Based Hit Reactions & Vehicle Damage System
+                  </h1>
+                  <a
+                    href="https://www.linkedin.com/posts/rashmika-siriwardhana-b155b7258_unrealengine5-gamedevelopment-vehicledeformation-ugcPost-7314391288403935232-tNbC/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD9y7IEBMSz-VK8Wwm05LkKHCv_uUrNXxGY"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View on LinkedIn
+                  </a>
+                </div>
+              </section>
             </div>
           </section>
-
           <footer className="flex flex-wrap items-center justify-between gap-4 border-t border-[var(--ink)]/10 pt-8 text-sm text-[var(--muted)]">
             <span>Based in Sri Lanka. Working worldwide.</span>
             <span className="font-medium text-[var(--ink)]">
