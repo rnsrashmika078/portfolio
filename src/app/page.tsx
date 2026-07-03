@@ -126,7 +126,8 @@ export default function Home() {
                 {
                   title: "Animation with Metahuman Characters",
                   items: [
-                    "use case in Anim montage",
+                    "use of in Anim montage",
+                    "use of Control rig",
                     "use of blender for animation",
                   ],
                 },
